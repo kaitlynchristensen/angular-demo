@@ -1,0 +1,15 @@
+{
+  "name": "client",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {},
+  "dependencies": {
+  },
+  "proxy": "http://localhost:3001/",
+  "scripts": {
+    "start": "",
+    "build": "dir",
+    "test": "",
+    "eject": ""
+  }
+}

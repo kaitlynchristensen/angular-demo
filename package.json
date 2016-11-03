@@ -1,13 +1,48 @@
 {
-  "name": "application-name",
+  "name": "angular-demo",
   "version": "0.0.1",
-  "private": true,
+  "description": "intro to react",
   "dependencies": {
-    "body-parser": "^1.0.2",
-    "express": "~4.1.1",
+    "body-parser": "~1.15.1",
+    "cookie-parser": "~1.4.3",
+    "debug": "~2.2.0",
+    "ejs": "^2.5.2",
+    "express": "~4.13.4",
     "express-error-handler": "^1.1.0",
+    "morgan": "~1.7.0",
+    "serve-favicon": "~2.3.0",
     "jade": "~0.31.2",
     "method-override": "^1.0.0",
     "morgan": "^1.0.0"
-  }
+  },
+  "devDependencies": {
+    "foreman": "^2.0.0",
+    "nodemon": "^1.11.0"
+  },
+  "cacheDirectories": [
+    "node_modules",
+    "bower_components",
+    "client/build",
+    "client/node_modules"
+  ],
+  "engines": {
+    "node": "6.6.0"
+  },
+  "scripts": {
+    "production": "node ./server/bin/www",
+    "start": "./node_modules/.bin/nf --procfile Procfile.dev start -p 3000",
+    "postinstall": "cd client && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaitlynchristensen/angular-demo"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kaitlynchristensen/angular-demo/issues"
+  },
+  "homepage": "https://github.com/kaitlynchristensen/angular-demo#readme"
 }
+
