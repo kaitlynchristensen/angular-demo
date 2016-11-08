@@ -1,12 +1,16 @@
 <section>
-  <ul>
-    <li ng-repeat="item in movies">
-      <div>
-        <a href="#/datails/{{movies.indexOf(item)}}">{{item.title}}</a>
-        <p>{{item.releaseYear}}</p>
-        <p>{{item.avgRating}}</p>
+      <div class="Movie">
+          <table>
+            <tr>
+            <th>Title</th>
+            <th>Date</th>
+            <th> Avgrating</th>
+          </tr>
+          <tr ng-repeat="item in movies">
+            <td><a href="#/datails/{{movies.indexOf(item)}}">{{item.title}}</a></th>
+            <td>{{item.releaseYear}}</th>
+            <td> {{item.avgRating}}</th>
+          </tr>
+          </table>
       </div>
-    </li>
-  </ul>
-
 </section>

@@ -1,6 +1,12 @@
 <section>
   <div ng-model="movies">
     <h1>{{movies[whichItem].title}}</h1>
+    <p>{{movies[whichItem].releaseYear}}</p>
+    <p>{{movies[whichItem].avgRating}}</p>
+    <a ng-href="http://www.imdb.com/title/tt{{movies[whichItem].movieId}}">{{movies[whichItem].movieId}}</a>
+    <p>{{movies[whichItem].mpaa}}</p>
+    <p>{{movies[whichItem].genres}}</p>
+    <p>{{movies[whichItem].plotSummary}}</p>
   </div>
   <a href="/#list">Back Home</a>
 </section>

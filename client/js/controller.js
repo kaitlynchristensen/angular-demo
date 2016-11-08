@@ -6,7 +6,8 @@ movieControllers.controller('ListController', function MyController($scope, $htt
   });
 });
 
-DetailsControllers.controller('DetailsController', function MyController($scope, $http, $routeParams){
+
+movieControllers.controller('DetailsController', function MyController($scope, $http, $routeParams){
   $http.get('js/movies.json').success(function(data){
     $scope.movies = data;
     $scope.whichItem = $routeParams.itemId;
