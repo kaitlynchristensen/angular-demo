@@ -1,0 +1,12 @@
+<section>
+  <ul>
+    <li ng-repeat="item in movies">
+      <div>
+        <a href="#/datails/{{movies.indexOf(item)}}">{{item.title}}</a>
+        <p>{{item.releaseYear}}</p>
+        <p>{{item.avgRating}}</p>
+      </div>
+    </li>
+  </ul>
+
+</section>
