@@ -10,7 +10,6 @@
     "express": "~4.13.4",
     "express-error-handler": "^1.1.0",
     "http-server": "^0.9.0",
-    "jade": "~0.31.2",
     "method-override": "^1.0.0",
     "morgan": "^1.0.0",
     "serve-favicon": "~2.3.0"

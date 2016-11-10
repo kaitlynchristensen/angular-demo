@@ -9,6 +9,12 @@ movies.movieList.map(function(movie) {
   moviesById[movie.movieId] = movie
 })
 
+router.use(function(req, res, next) {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");
+  next();
+});
+
 /* GET example. */
 router.get('/example', function(req, res, next) {
   var foo = {

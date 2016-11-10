@@ -1,0 +1,17 @@
+{
+  "name": "angular-demo",
+  "description": "intro to react",
+  "main": "",
+  "authors": [
+    "Kaitlyn Christensen <chri2970@umn.edu>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/kaitlynchristensen/angular-demo",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
