@@ -1,16 +1,11 @@
-<section>
-      <div class="Movie">
-          <table class="tablemovies">
-            <tr>
-            <th>Title</th>
-            <th>Date</th>
-            <th> Avgrating</th>
-          </tr>
-          <tr ng-repeat="item in movies">
-            <td><a href="#/datails/{{movies.indexOf(item)}}">{{item.title}}</a></th>
-            <td>{{item.releaseYear}}</th>
-            <td> {{item.avgRating}}</th>
-          </tr>
-          </table>
-      </div>
-</section>
+<div class="search">
+  <label>Search</label>
+  <input id="filter" ng-model="query">
+</div>
+<div class="movie" ng-repeat="item in movies | filter: query">
+  <a class="movie_title" href='/#/details/{{item.movieId}}'>{{item.title}}</a>
+  <div class="movie_releaseYear">({{item.releaseYear}})</div>
+  <div class="movie_avgRating">Rating: {{item.avgRating}} / 5</div>
+</div>
+
+

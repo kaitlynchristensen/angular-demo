@@ -8,9 +8,8 @@ movieControllers.controller('ListController', function MyController($scope, $htt
 
 
 movieControllers.controller('DetailsController', function MyController($scope, $http, $routeParams){
-  var url = 'http://localhost:3001/api/movie/' + $routeParams.itemId;
+  var url = 'http://localhost:3001/api/movies/' + $routeParams.movieId;
   $http.get(url).success(function(data) {
-    $scope.movies = data;
-    $scope.whichItem = $routeParams.itemId;
+    $scope.movie = data;
   });
 });

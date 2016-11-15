@@ -1,3 +1,61 @@
-body{
-  background-color:  #9999ff;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+header {
+	padding: 1em;
+	background-color: #9C96B2;
+	color: white;
+	text-align: center;
+}
+
+.search {
+	padding: 1em;
+	background-color: lavender;
+}
+
+main {
+	padding: 1em;
+}
+
+.movie {
+	padding: 1em;
+}
+
+.movie_title,
+.movieDetails_title {
+	display: inline;
+	font-weight: bold;
+	font-size: 2em;
+	text-decoration: none;
+}
+
+.movie_releaseYear,
+.movieDetails_releaseYear {
+	display: inline;
+	font-style: italic;
+	padding-left: .2em;
+}
+
+.movie_avgRating {
+	padding: .5em;
+}
+
+.movieDetails > a {
+	display: block;
+}
+
+.movieDetails {
+	text-align: center;
+	max-width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 1em;
+}
+
+.movieDetails > div,
+.movieDetails > a {
+	padding-bottom: 1em;
 }
